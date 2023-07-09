@@ -36,7 +36,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets._GITHUB_TOKEN }}
         with:
           tag_name: build-${{ github.sha }}
-          release_name: Release ${{ github.sha.slice(0, 7) }}
+          release_name: Release ${{ github.run_id }}
           draft: false
           prerelease: false
 
